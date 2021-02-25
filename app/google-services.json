@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1009460440104",
+    "project_id": "atom-9dc5b",
+    "storage_bucket": "atom-9dc5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009460440104:android:897586f782a505eee7591d",
+        "android_client_info": {
+          "package_name": "com.app.theatom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009460440104-r9nv1pt47jl3p66aaso104im6h51ldgk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.theatom",
+            "certificate_hash": "d1b7a65113f98efda08eb9c23b97b19c65c40138"
+          }
+        },
+        {
+          "client_id": "1009460440104-drn3r9sot9gftausjegevqotg3nhlto5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZl0xMPH5bO2QFwyLJbwUzwZjO5vlYpuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009460440104-drn3r9sot9gftausjegevqotg3nhlto5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

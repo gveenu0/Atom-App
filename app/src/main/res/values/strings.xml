@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Atom</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="slogan_login">Make meditation a\nhabit you love</string>
+    <string name="continue_as_guest">Continue As Guest</string>
+    <string name="registration_ask1">Hi! What do your friends call you?</string>
+    <string name="registration_continue">Continue</string>
+    <string name="home_txt1">A more mindful you</string>
+    <string name="home_txt2">building your meditation experience</string>
+</resources>
