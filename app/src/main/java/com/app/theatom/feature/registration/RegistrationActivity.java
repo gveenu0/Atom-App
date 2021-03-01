@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -17,6 +19,8 @@ import com.app.theatom.feature.authen.LoginActivity;
 import com.app.theatom.feature.homepage.HomeActivity;
 
 public class RegistrationActivity extends AppCompatActivity {
+    private EditText userName;
+    private Button btn_cont;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -24,11 +28,27 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
         String nameValue = getIntent().getStringExtra("name");
-        EditText userName = findViewById(R.id.edit_txt_1);
+        userName = findViewById(R.id.edit_txt_1);
+        btn_cont = findViewById(R.id.button_continue);
         userName.setText(nameValue);
+        userName.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                btn_cont.setEnabled(!userName.getText().toString().trim().isEmpty());
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         androidx.appcompat.widget.Toolbar toolbar = (androidx.appcompat.widget.Toolbar) findViewById(R.id.toolbar1);
-
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +58,7 @@ public class RegistrationActivity extends AppCompatActivity {
             }
         });
 
-        Button btn_cont = findViewById(R.id.button_continue);
+
         btn_cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
